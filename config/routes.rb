@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # こちらは削除してOKです
   root "messages#index"
   resources :users, only: [:edit, :update]
+  resources :rooms, only: [:new, :create]
+
 end
